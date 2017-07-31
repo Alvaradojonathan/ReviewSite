@@ -2,30 +2,29 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<div class="jumbotron jumboBack">
+    <h1>About Review Ninja</h1>
+    <p id="pStyle2"class="lead">Vestibulum laoreet interdum augue, at egestas tellus tristique nec. Curabitur quis nisl nisl. Nulla maximus justo nunc, nec sollicitudin leo finibus in. Vestibulum semper neque in enim scelerisque, at ullamcorper elit volutpat. Sed laoreet finibus commodo. Curabitur id elementum ipsum. Integer magna nunc, viverra eu blandit et, dapibus in arcu. Aliquam placerat a eros et fermentum. Curabitur volutpat vehicula turpis a pulvinar. Aenean finibus iaculis nunc, ut fringilla erat imperdiet et. Donec sed erat quis diam rutrum tincidunt. Etiam blandit blandit ipsum vel lacinia. Proin nisi risus, mattis at neque pharetra, maximus aliquam diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut sodales scelerisque dui, vitae tincidunt purus faucibus eget. Nulla facilisis tempor semper. Quisque eleifend diam a sem viverra vulputate in at augue. Suspendisse id suscipit mauris. Suspendisse risus nibh, dapibus vel luctus in, sollicitudin nec ex. Morbi semper tellus at consequat ornare. Nunc fermentum suscipit imperdiet. Etiam eu lectus rutrum, imperdiet diam bibendum, rutrum felis. Nunc libero erat, malesuada malesuada lectus bibendum, efficitur eleifend nisl. Quisque cursus nunc a enim vestibulum, sit amet posuere augue placerat.</p>
+    <p id="pStyle2"><a class="btn btn-primary btn-lg" href="@Url.Action("Index", "Reviews")">Read our reviews &raquo;</a>
+</p>
 </div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+        <h2>What we review</h2>
+        <p id="pStyle2">
+            Duis imperdiet maximus egestas. Sed volutpat sit amet sem in dictum. Maecenas aliquet maximus blandit. Phasellus vel porttitor urna. In feugiat vestibulum ligula scelerisque lacinia. Nulla facilisi. Vestibulum nisl purus, pretium a est vel, hendrerit vulputate ipsum. Curabitur ultrices fringilla nisl at ultrices.
         </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <p id="pStyle2"><a class="btn btn-default" href="@Url.Action("Index", "Categories")">Learn more &raquo;</a></p>
     </div>
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <h2>Who we are</h2>
+        <p id="pStyle2">Aenean at felis lectus. Suspendisse et cursus leo, id eleifend risus. Nullam hendrerit hendrerit ante nec consequat. Curabitur vitae odio elit. Praesent neque diam, tristique sed imperdiet at, rutrum vel nisl. Nulla a nisi dictum, placerat tortor id, congue tellus. Donec laoreet interdum urna sit amet pulvinar. Sed vestibulum massa a sapien imperdiet ultrices.</p>
+        <p id="pStyle2"><a class="btn btn-default" href="@Url.Action("Index", "Reviewers")">Learn more &raquo;</a></p>
     </div>
     <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <h2>Support Us</h2>
+        <p id="pStyle2">Curabitur finibus facilisis lectus, quis pulvinar justo fermentum at. Nulla lacinia libero non sapien posuere, eget volutpat augue feugiat. Cras vitae ante tortor.</p>
+        <p id="pStyle2"><a class="btn btn-default" href="@Url.Action("Index", "Reviews")">Find reviews &raquo;</a></p>
     </div>
 </div>
