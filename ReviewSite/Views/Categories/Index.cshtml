@@ -1,0 +1,12 @@
+﻿@model IEnumerable<ReviewSite.Models.Category>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Categories</h2>
+
+@foreach (var item in Model)
+{ 
+    <p id="pStyle2">@Html.DisplayFor(modelItem => item.CategoryName)</p>
+}

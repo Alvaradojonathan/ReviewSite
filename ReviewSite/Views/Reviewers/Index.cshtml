@@ -1,0 +1,24 @@
+﻿@model IEnumerable<ReviewSite.Models.Reviewer>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="row">
+    <h2>Reviewers   </h2>
+    <p>@Html.ActionLink("Join", "Create")</p>
+</div>
+
+<div class="row container">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-2">
+
+            <p id="thumbnailInfo"><img class="userPic" src="@Html.DisplayFor(modelItem => item.ReviewerImage)" /></p>
+            <div class="thumbnail">
+                <p id="pStyle">@Html.DisplayFor(modelItem => item.Name)</p>
+                <p id="pStyle">Joined: @item.DateJoined.ToShortDateString()</p>
+                <p id="pStyle">@Html.ActionLink("Details", "Details", new { id = item.ReviewerID })</p>
+            </div>
+        </div>
+    }
+</div>

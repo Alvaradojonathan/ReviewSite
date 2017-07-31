@@ -1,0 +1,27 @@
+﻿@model ReviewSite.Models.Review
+
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="container">
+    <h4 id="pStyle2">@Html.DisplayFor(model => model.Category.CategoryName)</h4>
+    <h4>@Html.DisplayFor(model => model.Title) Review</h4>
+    <h6 id="pStyle2">@Model.Date.ToShortDateString()</h6>
+    <hr />
+    <div class="row">
+        <div class="col-md-3 col-sm-8">
+            <p id="thumbnailInfo"><img class="img-rounded img-responsive" src="@Html.DisplayFor(model => model.ReviewImage)" /></p>
+        </div>
+        <div class="col-md-4 col-sm-12 thumbnail" >
+            <h4>Review</h4>
+            <p id="pStyle2">@Html.DisplayFor(model => model.ReviewContent)</p>
+            <br />
+            <a type="button" class="btn btn-default pull-right" href="@Url.Action("Index", "Reviews")">back</a>
+        </div>
+    </div>
+</div>
+
+
+

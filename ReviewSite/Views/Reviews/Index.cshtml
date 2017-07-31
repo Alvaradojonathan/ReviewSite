@@ -1,0 +1,20 @@
+﻿@model IEnumerable<ReviewSite.Models.Review>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 class="container">Reviews</h2>
+
+<div class="row container">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-3 col-sm-6 thumbnail thumbMargin">
+            <h5>Review Category: @Html.DisplayFor(modelItem => item.Category.CategoryName)</h5>
+            <h3>@Html.DisplayFor(modelItem => item.Title)</h3>
+            <h6>@item.Date.ToShortDateString()</h6>
+            <hr />
+            @Html.ActionLink("View", "Details", new { id = item.ReviewID })
+        </div>
+    }
+</div>

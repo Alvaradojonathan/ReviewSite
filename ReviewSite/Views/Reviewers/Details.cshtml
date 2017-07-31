@@ -1,0 +1,27 @@
+﻿@model ReviewSite.Models.Reviewer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div>
+    <h4>Reviewer</h4>
+    <hr />
+    <div class="row container">
+        <div class=" col-md-3 col-sm-6">
+            <p id="thumbnailInfo"><img class="img-rounded img-responsive" src="@Html.DisplayFor(model => model.ReviewerImage)" /></p>
+            <h4 id="pStyle">@Html.DisplayFor(model => model.Name)</h4>
+            <p id="pStyle">Date Joined: @Model.DateJoined.ToShortDateString()</p>
+        </div>
+        <div class="col-md-4 col-sm-6 thumbnail justifyP">
+            <h4>Bio:</h4>
+            <p id="pStyle2">@Html.DisplayFor(model => model.ReviewerBio)</p>
+            <a type="button" class="btn btn-default pull-right"href="@Url.Action("Index", "Reviewers")">back</a>
+        </div>
+        <div class="col-md-3">
+
+        </div>
+
+    </div>
+</div>
+

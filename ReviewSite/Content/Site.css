@@ -1,0 +1,78 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url('../images/YC7JCEl.jpg');
+    background-size: cover;
+    font-family: 'Architects Daughter', cursive;
+}
+
+div.navbar.navbar-inverse.navbar-fixed-top {
+    background-color: #73dbde;
+    border: none;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: black;
+    font-size: 18px;
+}
+
+.navbar-inverse .navbar-brand {
+    color: black;
+    font-size: 30px;
+}
+
+#pStyle {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align:center;
+}
+#pStyle2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+#pStyle3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/*Set size for user picture in user index*/
+.userPic {
+    height:100px;
+
+}
+#thumbnailInfo {
+    text-align:center;
+}
+
+#buttonText {
+    color:aliceblue;
+}
+
+.thumbMargin {
+    margin-right:6px;
+}
+
+.justifyP {
+    text-align:justify;
+    padding:12px;
+}
